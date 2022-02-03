@@ -1,0 +1,28 @@
+{% extends 'base.html' %}
+
+{% block head %}
+
+<title>Welcome To BlogPost</title>
+
+{% endblock %}
+
+{% block body %}
+<style>
+    #text {
+        margin-top: 10px;
+        margin-bottom: 50px;
+    }
+    #top_image{
+        position: absolute;
+        top: 20;
+    }
+</style>
+<div class="top_container">
+    <div id="text">
+        <h1>Start Creating Blogs</h1>
+    </div>
+    <div id="top_image">
+    <img src="{{ url_for('static', filename = 'Img.jpg') }}" width="500" height="600">
+</div>
+</div>
+{% endblock %}
